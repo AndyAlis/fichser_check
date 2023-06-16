@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
-    <title>CheckYourSki</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./check_code.js"></script>
+    <title>Check Your Ski</title>
 </head>
 <body>
     <header>
@@ -63,8 +65,22 @@
         </div>
     </section>
     <section id="sticker-check">
-        
+        <h1>Проверка кода</h1>
+
+	<div id="check_code">
+
+		*Код:
+		<input type="text" id="chcd_code">
+
+		<div id="chcd_captcha_img"></div>
+		<div id="chcd_captcha_input"></div>
+
+		<input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
+
+		<div id="chcd_answer"></div>
+	</div>
     </section>
     <script src="./index.js"></script>
+    
 </body>
 </html>
