@@ -11,7 +11,7 @@
 		$query[$key] = $value;
 
 	$query['ip'] = $_SERVER["REMOTE_ADDR"];
-	$query['key'] = '1e1d69141e0ce5c84f9d0539ec55f8c1';
+	$query['key'] = '0b981eda9cd62d61438a16d3e13541e5';
 
 	$answer = '';
     if ( ($answer = @file_get_contents($url . "?" . http_build_query($query))) !== FALSE)
