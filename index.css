@@ -256,4 +256,40 @@ header {
     height: 100vh;
     background-color: #151d29;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1.125rem;
+    text-align: center;
+    
+}
+
+#sticker-check h2 {
+    margin-bottom: 2rem;
+}
+
+#check_code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+}
+#chcd_captcha_img{
+    text-align: center;
+}
+
+#check_code input {
+    width: 100%;
+    font-family: inherit;
+    padding: 2px 5px;
+}
+#check_code div {
+    width: 100%;
+}
+
+#chcd_button {
+    display: inline-block;
+    width: 100%
+    /* align-self: center; */
 }

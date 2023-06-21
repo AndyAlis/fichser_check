@@ -65,20 +65,23 @@
         </div>
     </section>
     <section id="sticker-check">
-        <h1>Проверка кода</h1>
+        <h2>Проверка кода  c наклейки</h2>
 
-	<div id="check_code">
+        <div id="check_code">
 
-		*Код:
-		<input type="text" id="chcd_code">
+            
+            <input type="text" id="chcd_code" placeholder="код с наклейки">
 
-		<div id="chcd_captcha_img"></div>
-		<div id="chcd_captcha_input"></div>
+            <div id="chcd_captcha_img"></div>
+            <div id="chcd_captcha_input"></div>
+            <!-- <div id="chcd_captcha_img"><img src="https://cp.i-actions.ru/utils/captcha/captcha.php?sid=1404745"></div>
+            <div id="chcd_captcha_input"><input type="text" id="chcd_keystring" placeholder="код с картинки" maxlength="5" size="5" autocomplete="off" required=""></div> -->
 
-		<input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
+            <input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
 
-		<div id="chcd_answer"></div>
-	</div>
+            <div id="chcd_answer"></div>
+            <!-- <div id="chcd_answer">5485454255325: Некорректный код!</div> -->
+        </div>
     </section>
     <script src="./index.js"></script>
     
