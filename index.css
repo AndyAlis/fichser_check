@@ -47,12 +47,12 @@ header {
 
 
 .header-container img {
-    width: 48px;
+    height: 48px;
 }
 
 @media screen and (min-width: 1280px) {
     .header-container img {
-        width: 112px;
+        height: 96px;
         align-self: start;
     }
 }
@@ -253,7 +253,7 @@ header {
 }
 
 #sticker-check {
-    height: 100vh;
+    min-height: 50vh;
     background-color: #151d29;
     color: white;
     display: flex;
@@ -292,4 +292,16 @@ header {
     display: inline-block;
     width: 100%
     /* align-self: center; */
+}
+
+#map {
+    height: 80vh;
+}
+
+.marker-class {
+    min-width: 3.3rem;
+    height: 2rem;
+    /* background-image: url("./images/Fischer_logo.png"); */
+    background-image: url("./images/RaceCenter.png");
+    background-size: cover;
 }

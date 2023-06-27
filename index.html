@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./index.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./check_code.js"></script>
+    <script src="https://api-maps.yandex.ru/3.0/?apikey=4b8a6e53-39db-43e1-ac8b-eb3eb828a698&lang=ru_RU"></script>
     <title>Check Your Ski</title>
 </head>
 <body>
@@ -27,10 +28,10 @@
                      <li><a href="#about">О сервисе</a></li>
                      <li><a href="#sticker-check">Проверка</a></li>
                      <li><a href="#">Контакты</a></li>
-                     <li><a href="#">Найти диллера</a></li>
+                     <li><a href="#map">Найти диллера</a></li>
                 </ul> 
             </nav>           
-            <img src="./images/Fischer_logo.png" alt="Fischer Logo">
+            <img src="./images/RaceCenter_yellow.png" alt="Fischer Logo">
         </div>
         
         <nav id="mobile-nav" class="nav-links  display-none">
@@ -38,7 +39,7 @@
                  <li><a href="#about" class="mobile-nav-link">О сервисе</a></li>
                  <li><a href="#sticker-check" class="mobile-nav-link">Проверка</a></li>
                  <li><a href="#" class="mobile-nav-link">Контакты</a></li>
-                 <li><a href="#" class="mobile-nav-link">Найти диллера</a></li>
+                 <li><a href="#map" class="mobile-nav-link">Найти диллера</a></li>
             </ul> 
         </nav>
     </header>
@@ -56,7 +57,7 @@
             </p>
             
             <div class="about-btns">
-                <a href="#" class="about-btn">По коду с наклейки</a>
+                <a href="#sticker-check" class="about-btn">По коду с наклейки</a>
                 <a href="#" class="about-btn">По серийному номеру*</a>
             </div>
 
@@ -72,18 +73,21 @@
             
             <input type="text" id="chcd_code" placeholder="код с наклейки">
 
-            <div id="chcd_captcha_img"></div>
-            <div id="chcd_captcha_input"></div>
-            <!-- <div id="chcd_captcha_img"><img src="https://cp.i-actions.ru/utils/captcha/captcha.php?sid=1404745"></div>
-            <div id="chcd_captcha_input"><input type="text" id="chcd_keystring" placeholder="код с картинки" maxlength="5" size="5" autocomplete="off" required=""></div> -->
+            <!-- <div id="chcd_captcha_img"></div>
+            <div id="chcd_captcha_input"></div> -->
+            <div id="chcd_captcha_img"><img src="https://cp.i-actions.ru/utils/captcha/captcha.php?sid=1404745"></div>
+            <div id="chcd_captcha_input"><input type="text" id="chcd_keystring" placeholder="код с картинки" maxlength="5" size="5" autocomplete="off" required=""></div>
 
             <input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
 
-            <div id="chcd_answer"></div>
-            <!-- <div id="chcd_answer">5485454255325: Некорректный код!</div> -->
+            <!-- <div id="chcd_answer"></div> -->
+            <div id="chcd_answer">5485454255325: Некорректный код!</div>
         </div>
     </section>
-    <script src="./index.js"></script>
+    <section id="map">
+
+    </section>
+    <script type="module" src="./index.js"></script>
     
 </body>
 </html>
