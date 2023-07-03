@@ -28,15 +28,12 @@ const map = new ymaps3.YMap(document.getElementById('map'), {
     location: {
     // Координаты центра карты
     // Порядок по умолчанию: «долгота, широта»
-    // 55.75242679785425, 37.61755947247549 кремль
     center: [37.61755947247549, 55.75242679785425 ],
-
     // Уровень масштабирования
     // Допустимые значения: от 0 (весь мир) до 21.
     zoom: 7
     }
-    }
-);
+});
 // Добавляем слой для отображения схематической карты, при отключении - выключает карту
     map.addChild(new ymaps3.YMapDefaultSchemeLayer());
 // слой для добавления маркеров
@@ -67,7 +64,10 @@ const map = new ymaps3.YMap(document.getElementById('map'), {
     
     shops.forEach(el=>{
         const markerElement = document.createElement('div');
-        markerElement.className = 'marker-class'; 
+        markerElement.className = 'marker-class';
+        markerElement.addEventListener("click", ()=>{
+            window.alert(el.name);
+        })
 
         const mark = new ymaps3.YMapMarker(
         {
