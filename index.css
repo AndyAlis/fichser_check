@@ -316,3 +316,23 @@ header {
 .marker-class:hover {
     transform: scale(1.1);
 }
+
+.dialogElement {
+    padding: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+.dialogElement h3 {
+    margin-bottom: 1rem;
+}
+.dialogElement p {
+    margin-bottom: 0.5rem;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}

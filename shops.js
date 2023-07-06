@@ -2,7 +2,10 @@ const shops = [
     {
         id: 0,
         name: "Ювента Спорт Москва",
+        address: "Москва, ул. Максимова, д. 10 (метро Щукинская, вход с торца)",
+        site: "https://www.uventasport.ru/",
         phone: "+7 (495) 648 66 66",
+        phoneLink: "+74956486666",
         coordinates: [37.468321, 55.799119],
     },
     {

@@ -63,11 +63,48 @@ const map = new ymaps3.YMap(document.getElementById('map'), {
     // *************************
     
     shops.forEach(el=>{
+        let isShown = false;
+        
         const markerElement = document.createElement('div');
         markerElement.className = 'marker-class';
+
+
+        const dialogElement = document.createElement('dialog');
+        dialogElement.className = 'dialogElement';
+        
+        const dialogHeader = document.createElement('h3');
+        dialogHeader.textContent = `${el.name}`
+
+        const dialogAddress = document.createElement('p');
+        dialogAddress.textContent=`${el.address || ""}`;
+
+        const dialogPhone = document.createElement('p');
+        const dialogPhoneLink = document.createElement('a')
+        dialogPhoneLink.textContent = `${el.phone || ""}`;
+        dialogPhoneLink.href = `tel:${el.phoneLink || ""}`;
+        dialogPhone.appendChild(dialogPhoneLink);
+
+
+        
+        dialogElement.appendChild(dialogHeader);
+        dialogElement.appendChild(dialogAddress);
+        dialogElement.appendChild(dialogPhone);
+        markerElement.appendChild(dialogElement);
+        
+        
         markerElement.addEventListener("click", ()=>{
-            window.alert(el.name);
+            // window.alert(el.name);
+            if(!isShown) {
+                dialogElement.showModal();
+                isShown = !isShown;
+            }
+            else {
+                dialogElement.close();
+                isShown = !isShown;
+            }
+
         })
+        
 
         const mark = new ymaps3.YMapMarker(
         {
