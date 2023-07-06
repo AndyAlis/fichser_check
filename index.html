@@ -27,8 +27,8 @@
                 <ul>
                      <li><a href="#about">О сервисе</a></li>
                      <li><a href="#sticker-check">Проверка</a></li>
-                     <li><a href="#">Контакты</a></li>
-                     <li><a href="#map">Найти диллера</a></li>
+                     <li><a href="#contact_form">Контакты</a></li>
+                     <li><a href="#map">Где купить</a></li>
                 </ul> 
             </nav>           
             <img src="./images/RaceCenter_yellow.png" alt="Fischer Logo">
@@ -38,8 +38,8 @@
             <ul>
                  <li><a href="#about" class="mobile-nav-link">О сервисе</a></li>
                  <li><a href="#sticker-check" class="mobile-nav-link">Проверка</a></li>
-                 <li><a href="#" class="mobile-nav-link">Контакты</a></li>
-                 <li><a href="#map" class="mobile-nav-link">Найти диллера</a></li>
+                 <li><a href="#contact_form" class="mobile-nav-link">Контакты</a></li>
+                 <li><a href="#map" class="mobile-nav-link">Где купить</a></li>
             </ul> 
         </nav>
     </header>
@@ -58,7 +58,7 @@
             
             <div class="about-btns">
                 <a href="#sticker-check" class="about-btn">По коду с наклейки</a>
-                <a href="#" class="about-btn">По серийному номеру*</a>
+                <a href="#about" class="about-btn">По серийному номеру*</a>
             </div>
 
             <p class="astrix">* На данный момент проверка по серийному номеру не доступна.</p>
@@ -84,8 +84,24 @@
             <div id="chcd_answer">5485454255325: Некорректный код!</div>
         </div>
     </section>
-    <section id="map">
+    <section id="contact_form">
+        <h2>Написать нам</h2>
+        <form id="send_us_letter">
+            <label for="contact_name">Имя:</label>
+            <input type="text" name="name" id="contact_name" placeholder="Иван Иванов" required>
+            <label for="contact_email">Email:</label>
+            <input type="email" name="email" id="contact_email" placeholder="ivan@mail.ru" required>
+            <label for="contact_message">Сообщение:</label>
+            <textarea name="contact_message" id="contact_message" cols="30" rows="2" placeholder="Введите ваше сообщение..." required></textarea>
+            <button class="btn" id="send_form_btn">Отправить</button>
+        </form>
+    </section>
 
+
+
+    <section id="map_section">
+        <h2>Магазины на карте</h2>
+        <div id="map"></div>
     </section>
     <script type="module" src="./index.js"></script>
     

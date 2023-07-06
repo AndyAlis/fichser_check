@@ -3,6 +3,8 @@ import {shops} from "./shops.js"
 const burger = document.querySelector(".header-burger");
 const mobLinks = document.querySelectorAll(".mobile-nav-link");
 
+const form = document.getElementById("send_us_letter")
+
 
 
 burger.addEventListener("click", ()=>{
@@ -119,3 +121,8 @@ const map = new ymaps3.YMap(document.getElementById('map'), {
     });
     
 }
+
+form.addEventListener("submit", (e)=> {
+    e.preventDefault;
+    window.alert("Пока не работает!");
+})
