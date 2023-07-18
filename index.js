@@ -122,13 +122,15 @@ form.addEventListener("submit", (e) => {
 });
 
 btn_address_list.addEventListener("click", () => {
-  console.log("clicked!");
   map.classList.add("display-none");
   address_list.classList.remove("display-none");
+  btn_address_list.classList.add("display-none");
+  btn_address_map.classList.remove("display-none");
 });
 
 btn_address_map.addEventListener("click", () => {
-  console.log("clicked!");
   map.classList.remove("display-none");
   address_list.classList.add("display-none");
+  btn_address_map.classList.add("display-none");
+  btn_address_list.classList.remove("display-none");
 });
