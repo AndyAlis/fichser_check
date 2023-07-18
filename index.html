@@ -1,109 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="https://www.fischersports.com/media/unknown/d9/0c/f4/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.fischersports.com/media/unknown/d9/0c/f4/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
     <script type="text/javascript" src="./check_code.js"></script>
     <script src="https://api-maps.yandex.ru/3.0/?apikey=4b8a6e53-39db-43e1-ac8b-eb3eb828a698&lang=ru_RU"></script>
     <title>Check Your Ski</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <div class="header-burger">
-                <button class = "header-burger-btn">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-            <nav id="pc-nav" class="nav-links">
-                <ul>
-                     <li><a href="#about">О сервисе</a></li>
-                     <li><a href="#sticker-check">Проверка</a></li>
-                     <li><a href="#contact_form">Контакты</a></li>
-                     <li><a href="#map">Где купить</a></li>
-                </ul> 
-            </nav>           
-            <img src="./images/RaceCenter_yellow.png" alt="Fischer Logo">
+      <div class="header-container">
+        <div class="header-burger">
+          <button class="header-burger-btn">
+            <i class="fa fa-bars"></i>
+          </button>
         </div>
-        
-        <nav id="mobile-nav" class="nav-links  display-none">
-            <ul>
-                 <li><a href="#about" class="mobile-nav-link">О сервисе</a></li>
-                 <li><a href="#sticker-check" class="mobile-nav-link">Проверка</a></li>
-                 <li><a href="#contact_form" class="mobile-nav-link">Контакты</a></li>
-                 <li><a href="#map" class="mobile-nav-link">Где купить</a></li>
-            </ul> 
+        <nav id="pc-nav" class="nav-links">
+          <ul>
+            <li><a href="#about">О сервисе</a></li>
+            <li><a href="#sticker-check">Проверка</a></li>
+            <li><a href="#contact_form">Контакты</a></li>
+            <li><a href="#map">Где купить</a></li>
+          </ul>
         </nav>
+        <img src="./images/RaceCenter_yellow.png" alt="Fischer Logo" />
+      </div>
+
+      <nav id="mobile-nav" class="nav-links display-none">
+        <ul>
+          <li><a href="#about" class="mobile-nav-link">О сервисе</a></li>
+          <li><a href="#sticker-check" class="mobile-nav-link">Проверка</a></li>
+          <li><a href="#contact_form" class="mobile-nav-link">Контакты</a></li>
+          <li><a href="#map" class="mobile-nav-link">Где купить</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="hero">
-        <div class="hero-texts">
-            <h1>Проверка лыж <br>fischer</h1>
-            <p>Здесь вы можете проверить ваши лыжи Fischer по коду с наклейки или по серийному номеру*</p>
-            <a href="#about" class="btn">Проверить</a>
-        </div>
+      <div class="hero-texts">
+        <h1>Проверка лыж <br />fischer</h1>
+        <p>
+          Здесь вы можете проверить ваши лыжи Fischer по коду с наклейки или по
+          серийному номеру*
+        </p>
+        <a href="#about" class="btn">Проверить</a>
+      </div>
     </section>
     <section class="about" id="about">
-        <div class="about-texts">
-            <h2>О сервисе</h2>
-            <p>Наш сервис позволяет проверить на оригинальность и наличие гарантии лыжи Fischer по коду с наклейки на лыжах или по серийному номеру*. Проверка доступна для лыж: Fischer Helium, Fischer Speedmax 3D 61k, Fischer Speedmax 3D.
-            </p>
-            
-            <div class="about-btns">
-                <a href="#sticker-check" class="about-btn">По коду с наклейки</a>
-                <a href="#about" class="about-btn">По серийному номеру*</a>
-            </div>
+      <div class="about-texts">
+        <h2>О сервисе</h2>
+        <p>
+          Наш сервис позволяет проверить на оригинальность и наличие гарантии
+          лыжи Fischer по коду с наклейки на лыжах или по серийному номеру*.
+          Проверка доступна для лыж: Fischer Helium, Fischer Speedmax 3D 61k,
+          Fischer Speedmax 3D.
+        </p>
 
-            <p class="astrix">* На данный момент проверка по серийному номеру не доступна.</p>
-
+        <div class="about-btns">
+          <a href="#sticker-check" class="about-btn">По коду с наклейки</a>
+          <a href="#about" class="about-btn">По серийному номеру*</a>
         </div>
+
+        <p class="astrix">
+          * На данный момент проверка по серийному номеру не доступна.
+        </p>
+      </div>
     </section>
     <section id="sticker-check">
-        <h2>Проверка кода  c наклейки</h2>
+      <h2>Проверка кода c наклейки</h2>
 
-        <div id="check_code">
+      <div id="check_code">
+        <input type="text" id="chcd_code" placeholder="код с наклейки" />
 
-            
-            <input type="text" id="chcd_code" placeholder="код с наклейки">
-
-            <!-- <div id="chcd_captcha_img"></div>
+        <!-- <div id="chcd_captcha_img"></div>
             <div id="chcd_captcha_input"></div> -->
-            <div id="chcd_captcha_img"><img src="https://cp.i-actions.ru/utils/captcha/captcha.php?sid=1404745"></div>
-            <div id="chcd_captcha_input"><input type="text" id="chcd_keystring" placeholder="код с картинки" maxlength="5" size="5" autocomplete="off" required=""></div>
-
-            <input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
-
-            <!-- <div id="chcd_answer"></div> -->
-            <div id="chcd_answer">5485454255325: Некорректный код!</div>
+        <div id="chcd_captcha_img">
+          <img
+            src="https://cp.i-actions.ru/utils/captcha/captcha.php?sid=1404745"
+          />
         </div>
+        <div id="chcd_captcha_input">
+          <input
+            type="text"
+            id="chcd_keystring"
+            placeholder="код с картинки"
+            maxlength="5"
+            size="5"
+            autocomplete="off"
+            required=""
+          />
+        </div>
+
+        <input
+          id="chcd_button"
+          type="button"
+          value="Отправить"
+          onclick="return chcd_fsubmit();"
+        />
+
+        <!-- <div id="chcd_answer"></div> -->
+        <div id="chcd_answer">5485454255325: Некорректный код!</div>
+      </div>
     </section>
     <section id="contact_form">
-        <h2>Написать нам</h2>
-        <form id="send_us_letter">
-            <label for="contact_name">Имя:</label>
-            <input type="text" name="name" id="contact_name" placeholder="Иван Иванов" required>
-            <label for="contact_email">Email:</label>
-            <input type="email" name="email" id="contact_email" placeholder="ivan@mail.ru" required>
-            <label for="contact_message">Сообщение:</label>
-            <textarea name="contact_message" id="contact_message" cols="30" rows="2" placeholder="Введите ваше сообщение..." required></textarea>
-            <button class="btn" id="send_form_btn">Отправить</button>
-        </form>
+      <h2>Написать нам</h2>
+      <form id="send_us_letter">
+        <label for="contact_name">Имя:</label>
+        <input
+          type="text"
+          name="name"
+          id="contact_name"
+          placeholder="Иван Иванов"
+          required
+        />
+        <label for="contact_email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="contact_email"
+          placeholder="ivan@mail.ru"
+          required
+        />
+        <label for="contact_message">Сообщение:</label>
+        <textarea
+          name="contact_message"
+          id="contact_message"
+          cols="30"
+          rows="2"
+          placeholder="Введите ваше сообщение..."
+          required
+        ></textarea>
+        <button class="btn" id="send_form_btn">Отправить</button>
+      </form>
     </section>
-
-
 
     <section id="map_section">
-        <h2>Магазины на карте</h2>
-        <div id="map"></div>
+      <h2>Магазины</h2>
+      <div id="address_btns">
+        <button class="btn" id="btn_address_list">Списком</button>
+        <button class="btn" id="btn_address_map">На карте</button>
+      </div>
+      <div id="address_list"></div>
+      <div id="map" class="display-none"></div>
     </section>
     <script type="module" src="./index.js"></script>
-    
-</body>
+  </body>
 </html>
